@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+ int main()
+ {
+ 	
+ 	int a,i,j,b,c=0;
+ 	while(1){
+	 
+ 	printf("\n\n\n1.Addition of 2 Numbers\n2.Check Odd/Even\n3.Printing First N natural numbers\n4.Exit\n");
+ 	printf("Enter the task you want to perfrom: ");
+ 	scanf("%d",&a);
+ 	switch(a)
+ 	{
+ 		case 1:
+ 			printf("\nEnter the 2 numbers you want to add: ");
+			scanf("%d %d",&i,&j);
+			printf("\nThe resultant of the numbers %d and %d is %d",i,j,i+j);
+			break;
+		case 2:
+			printf("\nEnter the number to check it is even or odd: ");
+			scanf("%d",&i);
+			if (i%2==0)
+			{
+				printf("\nIt's an Even Number");
+				
+		    }
+			else
+			{
+				printf("\nIt's a Odd Number");
+			}
+			break;
+		case 3:
+			printf("\nEnter the number to calculate the first n Natural Numbers: ");	
+			scanf("%d",&i);
+			for (b=0;b<=i;b++)
+			{
+				printf("%d\n",b);
+			}
+			break;
+		case 4:
+			exit(0);
+			break;	
+		default:
+			printf("\nThere is no such index number!!");
+			break;	
+	 }
+}
+ clrscr();
+ return 0;	
+ }
